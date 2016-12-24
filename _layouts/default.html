@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>{{ page.title }}</title>
+      <meta name="viewport" content="width=device-width">
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="/assets/css/main.css">
+
+      <!-- PURE GRID CDN-->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.1(base-min.css+grids-min.css)">
+
+    </head>
+    <body>
+
+        {% include _partials/header.html %}
+
+            {{ content }}
+
+        {% include _partials/footer.html %}
+
+    </body>
+</html>
