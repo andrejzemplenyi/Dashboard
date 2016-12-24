@@ -15,11 +15,20 @@
     </head>
     <body>
 
-        {% include _partials/header.html %}
-
-            {{ content }}
-
-        {% include _partials/footer.html %}
-
+        <div class="big-container">
+            <div id="top-bar">
+                {% include _partials/header.html %}
+            </div>
+            <div id="content">
+                <div id="main-menu">
+                    {% include _partials/menu.html %}
+                </div>
+                {{ content }}
+            </div>
+            <div id="footer">
+                {% include _partials/footer.html %}
+            </div>
+        </div>
+        
     </body>
 </html>
